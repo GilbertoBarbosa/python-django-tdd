@@ -1,0 +1,3 @@
+venv/
+setup/settings.py
+setup/__pycache__/
