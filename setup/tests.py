@@ -37,6 +37,7 @@ class AnimaisTestCase(LiveServerTestCase):
 
         # Ele encontra o busca Animal e decide usar o site,
         home_page = self.browser.get(self.live_server_url + '/')
+        self.browser.maximize_window()
 
         # porque ele vê no menu do site escrito Busca Animal.
         brand_element = self.browser.find_element(By.CSS_SELECTOR, '.navbar')
@@ -54,6 +55,7 @@ class AnimaisTestCase(LiveServerTestCase):
         time.sleep(2)
         # Clicar no botão
         self.browser.find_element(By.CSS_SELECTOR, 'form button').click()
+        time.sleep(10)
 
 
         # O site exibe 4 características do animal pesquisado.

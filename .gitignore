@@ -2,3 +2,4 @@ venv/
 setup/settings.py
 setup/__pycache__/
 chromedriver
+static/
